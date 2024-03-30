@@ -7,11 +7,11 @@
   </div>
   <div class="footer-info">
     {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+      href="https://github.com/athul/archie">Archie Theme</a> | 所有的文章除特别声明外，均使用 <a href="{{ .Site.BaseURL }}license">CC BY-NC-SA 4.0</a>。
   </div>
 </footer>
 {{ if not .Site.IsServer }}
-{{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
 {{- if (isset .Site.Params "social") -}}
