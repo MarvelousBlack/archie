@@ -10,9 +10,6 @@
       href="https://github.com/athul/archie">Archie Theme</a> | 所有的文章除特别声明外，均使用 <a href="{{ .Site.BaseURL }}license">CC BY-NC-SA 4.0</a>。
   </div>
 </footer>
-{{ if not .Site.IsServer }}
-{{ template "_internal/google_analytics.html" . }}
-{{ end }}
 
 {{- if (isset .Site.Params "social") -}}
 <script>
